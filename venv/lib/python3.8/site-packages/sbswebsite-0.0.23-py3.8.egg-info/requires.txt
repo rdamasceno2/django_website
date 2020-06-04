@@ -1,0 +1,8 @@
+flask
+configparser
+httplib2
+oauth2
+simplejson
+github3.py
+facebook-sdk
+requests

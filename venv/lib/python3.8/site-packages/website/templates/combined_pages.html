@@ -1,0 +1,35 @@
+{% extends "combined_base.html" %}
+
+{% block sidebar %}
+{% if not mobile %}
+{% if data is not none %}
+<li class="active"><a href="#intro">Intro</a></li>
+{% endif %}
+{% if data is not none %}
+<li><a href="#education">Education</a></li>
+{% endif %}
+{% if data is not none %}
+<li><a href="#experience">Experience</a></li>
+{% endif %}
+{% if data is not none %}
+<li><a href="#skills">Skills</a></li>
+{% endif %}
+{% if facebook_data is not none and github_data is not none %}
+<li><a href="#personal">Personal</a></li>
+{% endif %}
+{% if facebook_data is not none and github_data is not none %}
+<li><a href="#github">Github</a></li>
+{% endif %}
+{% if user_data is not none and data is not none %}
+<li><a href="#contact">Contact</a></li>
+{% endif %}
+{% endif %}
+{% endblock %}
+
+
+{% block pages %}
+{% include "home.html" if data is not none %}
+{% include "professional.html" if data is not none %}
+{% include "personal.html" if facebook_data is not none and github_data is not none %}
+{% include "contact.html" if user_data is not none and data is not none %}
+{% endblock %}

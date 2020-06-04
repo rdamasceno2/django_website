@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 id="personal">Personal Interests</h1>
+<p>
+I am a big fan of football. I am a big New York Giants fan.
+</p>
+<br>
+Some things that I like:
+<br>
+{% for category in facebook_data["likes"].keys() %}
+{{ category }}
+<ul>
+{% for id in facebook_data["likes"][category].keys() %}
+<li><a href="http://www.facebook.com/{{ id }}">{{ facebook_data["likes"][category][id] }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
+<br>
+<h1 id="github">Github</h1>
+<ul>
+{% for repo in github_data.keys() %}
+<li><a href={{ github_data[repo]["url"] }}>{{ repo }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: sbswebsite
+Version: 0.0.23
+Summary: Flask based project to create a personal site
+Home-page: https://github.com/salilsub/website
+Author: Salil Subbakrishna
+Author-email: salilsub@gmail.com
+License: Apache v2.0
+Description: Flask based project to create a personal site
+Keywords: website framework flask
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7

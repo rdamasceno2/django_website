@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ccdb63b-3b5d-407b-b6e7-b7674c36a89b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Django_website" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cVlqGbnUNhcieUh7GQzSDvVBmc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rafa_yegor_website" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rafa_yegor_website" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ccdb63b-3b5d-407b-b6e7-b7674c36a89b" name="Default Changelist" comment="" />
+      <created>1590621831286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590621831286</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="160" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591064718479">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="160" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.721@0.23.1280.721" timestamp="1591064718479" />
+    <state x="386" y="119" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591053472098">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="386" y="119" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.721@0.23.1280.721" timestamp="1591053472098" />
+    <state x="420" y="174" key="com.intellij.ide.util.TipDialog" timestamp="1590968430009">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="420" y="174" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1590968430009" />
+    <state x="410" y="68" width="670" height="676" key="search.everywhere.popup" timestamp="1591064929331">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="410" y="68" width="670" height="676" key="search.everywhere.popup/0.23.1280.721@0.23.1280.721" timestamp="1591064929331" />
+  </component>
+</project>

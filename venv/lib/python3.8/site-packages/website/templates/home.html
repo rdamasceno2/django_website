@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ data["formattedName"] }}{% endblock %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1 id="intro" align="center">{{ data["formattedName"] }}</h1>
+  <p class="lead">{{ user_data['tagline'] }}</p>
+</div>
+
+
+<!--<h1 align="center">{{ data["formattedName"] }}'s Personal Page</h1>
+<img src="{{ data["pictureUrl"] }}" align="center" alt="some_text">
+<p id="intro">
+This is my personal page. I am a 24 year old technologist working in NYC. This site is a work in progress, it will continue to be populated with more information as time goes on.
+</p>-->
+{% endblock %}

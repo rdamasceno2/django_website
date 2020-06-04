@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 id="contact">Contact Me</h1>
+<ul>
+<li><a href="{{ user_data["email"] }}">Email</a></li>
+<li><a href={{ data["publicProfileUrl"] }}>LinkedIn</a></li>
+</ul>
+<object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id={{ gvoice_widget }}&style=0" /></object>
+{% endblock %}

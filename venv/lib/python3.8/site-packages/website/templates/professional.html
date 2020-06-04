@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Professional Experience{% endblock %}
+{% block content %}
+
+{% macro format_dates(job) %}
+  {% set startDate = job['startDate'] %}
+  {% set isCurrent = job['isCurrent'] %}
+  {% if job['endDate'] is defined %}{% set endDate = job['endDate'] %}{% else %} {% set endDate = none %}{% endif %}
+  <td>{% if startDate['month'] is defined %}{{ startDate['month'] }}/{% endif %}{{ startDate['year'] }}</td>
+  <td>{% if endDate is none and isCurrent is sameas true %}Current{% else %} {% if endDate['month'] is defined %}{{ endDate['month'] }}/{% endif %}{{ endDate['year'] }}{% endif %}</td>
+{% endmacro %}
+<p>
+<h1 id="summary">Summary</h1>
+{{ data["summary"] }}
+<br><br>
+<a href={{ data["publicProfileUrl"] }}>LinkedIn Public Profile</a>
+<br>
+<h1 id="education">Education</h1>
+<br>
+{% set education = data["educations"]["values"] %}
+<br>
+<table border="1">
+<tr>
+  <td>Degree</td>
+  <td>School</td>
+  <td>Field</td>
+  <td>Matriculation Year</td>
+  <td>Graduation Year</td>
+</tr>
+{% for degree in education %}
+<tr>
+  <td>{{ degree["degree"] }}</td>
+  <td>{{ degree["schoolName"] }}</td>
+  <td>{{ degree["fieldOfStudy"] }}</td>
+  {{ format_dates(degree) }}
+</tr>
+{% endfor %}
+</table>
+<br>
+<h1 id="experience">Professional Experience</h1>
+<br>
+{% set positions = data["positions"]["values"] %}
+<br>
+<table border="1">
+<tr>
+  <td>Company</td>
+  <td>Position</td>
+  <td>Position Description</td>
+  <td>Start Date</td>
+  <td>End Date</td>
+</tr>
+{% for job in positions %}
+<tr>
+  <td>{{ job['company']['name'] }}</td>
+  <td>{{ job['title'] }}</td>
+  <td>{{ job['summary'] }}</td>
+  {{ format_dates(job) }}
+</tr>
+{% endfor %}
+</table>
+<br>
+{% set skills = data["skills"]["values"] %}
+<h1 id="skills">Skills</h1>
+<table border="1">
+{% for skill in skills %}
+<tr><td>{{ skill["skill"]["name"] }}</td></tr>
+{% endfor %}
+</table>
+<br>
+
+</p>
+{% endblock %}
